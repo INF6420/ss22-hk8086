@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(242, 244, 248);
+    font-family: sans-serif;
+} 
+p{font-size: 24px;
+text-align: center;}
+h1{color: rgb(250, 250, 252);
+align-content: space-around;
+text-align: center;
+text-transform: uppercase;}
+h2{color: rgb(253, 253, 253);
+text-align: center;
+text-transform: uppercase;}
+h3{color: black;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(21, 19, 19) ;
+}
+li a {
+    color: rgb(248, 248, 250);
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li{
+    float:right;
+}
+
+.menu li{background: rgb(242, 243, 241); color: rgb(9, 9, 9); display: inline
+    ;}
+
+
+.header{
+    margin: 40px;
+    padding: 30px;
+    background-color: #030303;
+}
+    
+.flex-container{
+    display:flex;
+    align-items:flex-start
+    margin: 20px;
+
+
+}
+.flex-container-2{
+    display:flex;
+    margin: 20px;
+    align-items: center;
+}
+    .item{
+        float: left;
+        width: 700px;
+        height: 500px;
+        background-color: rgb(151, 150, 148);
+        color: black
+        margin 10px;
+        align-items: center;
+        text-align: center;
+
+    }
+    @media (min-width: 700px){
+        .item{
+            display: flex;
+            flex-flow: wrap;
+    }
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(110, 107, 110, 0.067);
+        
+      }
+      .card{
+        background-color: black;
+        color: floralwhite;
+      }
+
+@media (min-width: 50px){
+    .card-container{
+    align-items: center;
+    flex: 1 0 48%;
+    margin: 1%;
+    display: flex;
+    flex-flow: wrap;
+}
+}
+   .img-container{
+    float: left;
+    width: 100ox;
+    padding: 20px;
+    align-items: center;
+   }
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    background: rgb(7, 7, 7);
+}
+.course-work{
+    width: 90%;
+    margin: .9em auto;
+    background: rgb(105, 106, 105);
+    border: 2px solid black;
+}
+.work,
+.description{
+    width: 90%;
+    margin: 0 auto;
+}
+.work{
+    padding: 1.2em 1em;
+}
+
+.description{
+    padding: 1em 2em;
+}
+
+.work iframe{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.description h2{
+    padding: 0.5em;
+    text-align: center;
+}
+@media (min-width: 640px){
+    .card-container{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .course-work{
+        flex: 1 0 48%;
+        margin: 1%;
+    }
+}
+
+.favorites{
+    height: 100px;
+    width: 100px
+    background-color black;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;   
+}
+
+
+.footer{
+    margin: 40px;
+    background-color: rgb(3, 3, 3);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn{
+    text-decoration: none;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: all 0.3s;
+    margin:40px ;
+}
+.btn:hover{
+    transform: scale(1.15);
+}
+
