@@ -2,7 +2,7 @@ body {
     background-color: rgb(242, 244, 248);
     font-family: sans-serif;
 } 
-p{font-size: 24px;
+p{font-size: 20px;
 text-align: center;}
 h1{color: rgb(250, 250, 252);
 align-content: space-around;
@@ -14,6 +14,8 @@ text-transform: uppercase;}
 h3{color: black;
     text-align: center;
     text-transform: uppercase;
+    font-size: 20px;
+
 
 }
 * {
@@ -23,6 +25,8 @@ h3{color: black;
 }
 
 ul{
+    display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     margin:0;
     padding: 0;
@@ -37,10 +41,6 @@ li a {
     text-decoration: none;
 }
 
-li{
-    float:right;
-}
-
 .menu li{background: rgb(242, 243, 241); color: rgb(9, 9, 9); display: inline
     ;}
 
@@ -53,10 +53,13 @@ li{
     
 .flex-container{
     display:flex;
-    align-items:flex-start
-    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
-
+.felx-container .item {
+    justify-content: center;
 }
 .flex-container-2{
     display:flex;
@@ -64,20 +67,20 @@ li{
     align-items: center;
 }
     .item{
-        float: left;
-        width: 700px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         background-color: rgb(151, 150, 148);
         color: black
         margin 10px;
         align-items: center;
         text-align: center;
+}
 
-    }
     @media (min-width: 700px){
         .item{
             display: flex;
             flex-flow: wrap;
+            justify-content: center;
     }
     }
     * {
@@ -90,7 +93,6 @@ li{
       
       /* Float four columns side by side */
       .column {
-        float: left;
         width: 50%;
         padding: 0 20px;
       }
@@ -124,6 +126,9 @@ li{
       .card{
         background-color: black;
         color: floralwhite;
+        border:3px solid white;
+        margin-bottom: 20px;
+       
       }
 
 @media (min-width: 50px){
@@ -136,7 +141,6 @@ li{
 }
 }
    .img-container{
-    float: left;
     width: 100ox;
     padding: 20px;
     align-items: center;
@@ -187,28 +191,25 @@ li{
     }
 }
 
-.favorites{
-    height: 100px;
-    width: 100px
-    background-color black;
-    display:flex;
-    justify-content: space-around;
-    text-align: center;   
-}
-
-
 .footer{
     margin: 40px;
     background-color: rgb(3, 3, 3);
     font-size: 20px;
     color: white;
     text-decoration: none;
-    
+    }
+    h4{ font-size: 18px;
+        text-align: center;
+        
+ } 
+    a{ color: white;
+
 }
+
 
 .btn{
     text-decoration: none;
-    background-color: white;
+    background-color: rgb(4, 4, 4);
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -221,3 +222,81 @@ li{
     transform: scale(1.15);
 }
 
+.favorites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap:wrap
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #faf8f8;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #f7f2f2;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  
