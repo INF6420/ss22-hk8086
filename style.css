@@ -45,6 +45,10 @@ li a {
     text-decoration: none;
 }
 
+ol{
+    list-style-type: none;
+}
+
 .menu li{background: rgb(242, 243, 241); color: rgb(9, 9, 9); display: inline
     ;}
 
@@ -71,8 +75,8 @@ li a {
     align-items: center;
 }
     .item{
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         background-color: rgb(151, 150, 148);
         color: black
         margin 10px;
